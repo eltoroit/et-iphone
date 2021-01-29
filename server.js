@@ -8,8 +8,9 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
+    let dttm = new Date().toJSON().replace("T", " ").replace(/-/g, "").split(".")[0];
     res.render('pages/index', {
-        dttm: new Date().toJSON(),
+        dttm,
         color: getRandomColor()
     });
 });
