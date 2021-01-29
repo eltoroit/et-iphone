@@ -6,7 +6,11 @@
     <title>IPHONE TEST</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <style>
-        html,
+        html {
+            margin: 0px;
+            background-color: yellow;
+        }
+
         body {
             margin: 0px;
             background-color: blue;
@@ -30,7 +34,8 @@
         document.addEventListener('orientationchange', () => {
             document.documentElement.style.height = `initial`;
             setTimeout(() => {
-                document.documentElement.style.height = `100%`;
+                document.documentElement.style.height = `100vh`;
+                document.documentElement.style.width = `100vw`;
                 setTimeout(() => {
                     // this line prevents the content
                     // from hiding behind the address bar
