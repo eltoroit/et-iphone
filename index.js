@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const HOST = process.env.HOST || 'localhost';
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static('public'));
 
@@ -8,6 +9,6 @@ app.get('/hello', (req, res) => {
     res.send('Hello World!')
 })
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+app.listen(PORT, () => {
+    console.log(`Example app listening at http://{HOST}:${port}`)
 })
