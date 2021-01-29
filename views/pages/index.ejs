@@ -4,11 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <title>IPHONE TEST</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" /> -->
+    <!-- html {
+        padding: env(safe-area-inset);
+    } -->
     <style>
-        html {
-            padding: env(safe-area-inset);
-        }
 
         html,
         body {
@@ -26,7 +27,7 @@
         }
 
         .center {
-            top: 15%;
+            top: 50%;
             width: 100%;
             position: absolute;
             text-align: center;
@@ -49,7 +50,7 @@
                 Hello-EJS
             </div>
             <div class="smallFont">
-                [v2.15.3]
+                [v2.15.4]
             </div>
             <div class="smallFont">
                 <%= dttm %>
