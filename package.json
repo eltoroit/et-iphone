@@ -9,6 +9,7 @@
   "author": "Andres Perez <aperez@salesforce.com> (http://eltoro.it)",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1"
   }
 }

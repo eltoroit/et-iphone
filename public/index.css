@@ -1,0 +1,34 @@
+html {
+  margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: yellow;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+}
+
+.center {
+  top: 50%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.bigFont {
+  font-size: 5rem;
+}
+
+.smallFont {
+  font-size: 2.5rem;
+}

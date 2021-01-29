@@ -5,21 +5,25 @@
     <meta charset="utf-8" />
     <title>IPHONE TEST</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script> -->
     <style>
         html {
             margin: 0px;
+            width: 100%;
             overflow-x: hidden;
             background-color: yellow;
         }
 
         body {
             margin: 0px;
+            width: 100%;
             overflow-x: hidden;
             background-color: blue;
         }
 
-        .red {
-            background-color: red;
+        .bigBox {
+            background-color: <%=color %>;
             width: 100vw;
             height: 100vh;
         }
@@ -27,9 +31,16 @@
         .center {
             top: 50%;
             width: 100%;
-            font-size: 5rem;
             position: absolute;
             text-align: center;
+        }
+
+        .bigFont {
+            font-size: 5rem;
+        }
+
+        .smallFont {
+            font-size: 2.5rem;
         }
     </style>
     <script>
@@ -39,19 +50,24 @@
                 document.documentElement.style.height = `100vh`;
                 document.documentElement.style.width = `100vw`;
                 setTimeout(() => {
-                    // this line prevents the content
-                    // from hiding behind the address bar
+                    // this line prevents the content from hiding behind the address bar
                     window.scrollTo(0, 1);
                 }, 500);
             }, 500);
         });
+        // alert("<%= dttm %>");
     </script>
 </head>
 
 <body>
-    <div class="red">
+    <div class="bigBox">
         <div class="center">
-            Hello
+            <div class="bigFont">
+                Hello-EJS
+            </div>
+            <div class="smallFont">
+                <%= dttm %>
+            </div>
         </div>
     </div>
 </body>
