@@ -10,8 +10,8 @@
     <style>
         html,
         body {
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             margin: 0 auto;
             max-width: 100vw;
             overflow-x: hidden;
@@ -19,8 +19,8 @@
         }
 
         .bigBox {
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             margin: 0 auto;
             overflow-x: hidden;
         }
@@ -49,7 +49,7 @@
                 Hello-EJS
             </div>
             <div class="smallFont">
-                [v2.14.7]
+                [v2.14.8]
             </div>
             <div class="smallFont">
                 <%= dttm %>
@@ -62,8 +62,8 @@
     document.addEventListener('orientationchange', () => {
         document.documentElement.style.height = `initial`;
         setTimeout(() => {
-            document.documentElement.style.height = `100%`;
-            document.documentElement.style.width = `100%`;
+            document.documentElement.style.width = `100vw`;
+            document.documentElement.style.height = `100vh`;
             setTimeout(() => {
                 // this line prevents the content from hiding behind the address bar
                 window.scrollTo(0, 1);
