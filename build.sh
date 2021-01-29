@@ -13,3 +13,4 @@ chmod 444 $newFile
 git add .
 git commit -m "SED Version"
 git push origin Test02-EJS
+echo "New Version: $newVersion"
