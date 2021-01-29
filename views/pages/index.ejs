@@ -23,7 +23,6 @@
         }
 
         .bigBox {
-            background-color: <%=color %>;
             width: 100vw;
             height: 100vh;
         }
@@ -43,20 +42,6 @@
             font-size: 2.5rem;
         }
     </style>
-    <script>
-        document.addEventListener('orientationchange', () => {
-            document.documentElement.style.height = `initial`;
-            setTimeout(() => {
-                document.documentElement.style.height = `100vh`;
-                document.documentElement.style.width = `100vw`;
-                setTimeout(() => {
-                    // this line prevents the content from hiding behind the address bar
-                    window.scrollTo(0, 1);
-                }, 500);
-            }, 500);
-        });
-        // alert("<%= dttm %>");
-    </script>
 </head>
 
 <body>
@@ -71,5 +56,21 @@
         </div>
     </div>
 </body>
+
+<script>
+    document.addEventListener('orientationchange', () => {
+        document.documentElement.style.height = `initial`;
+        setTimeout(() => {
+            document.documentElement.style.height = `100vh`;
+            document.documentElement.style.width = `100vw`;
+            setTimeout(() => {
+                // this line prevents the content from hiding behind the address bar
+                window.scrollTo(0, 1);
+            }, 500);
+        }, 500);
+    });
+    document.querySelector(".bigBox").style.backgroundColor = "<%=color %>";
+    // alert("<%= dttm %>");
+</script>
 
 </html>
