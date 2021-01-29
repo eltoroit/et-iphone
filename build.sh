@@ -12,5 +12,5 @@ sed  "s/$oldString/$newVersion/" $oldFile > $newFile
 chmod 444 $newFile
 git add .
 git commit -m "SED Version"
-git push origin Test02-EJS
+git push origin WORKS01
 echo "New Version: $newVersion"
