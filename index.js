@@ -10,5 +10,5 @@ app.get('/hello', (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`Example app listening at http://{HOST}:${port}`)
+    console.log(`Example app listening at http://${HOST}:${PORT}`)
 })
