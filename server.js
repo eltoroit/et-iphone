@@ -24,8 +24,8 @@ app.listen(PORT, () => {
 
 
 function getRandomColor() {
-    let RED = Math.floor(Math.random() * Math.floor(256));
-    let GREEN = Math.floor(Math.random() * Math.floor(256));
-    let BLUE = Math.floor(Math.random() * Math.floor(128));
+    let RED = 128 + Math.floor(Math.random() * Math.floor(128));
+    let GREEN = 128 + Math.floor(Math.random() * Math.floor(128));
+    let BLUE = 128 + Math.floor(Math.random() * Math.floor(128));
     return `rgb(${RED}, ${GREEN}, ${BLUE})`;
 }
